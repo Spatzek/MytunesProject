@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package be;
+import java.io.File;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 
 /**
  *
@@ -11,12 +14,17 @@ package be;
  */
 public class MusicPlayer
 {
+    
+    
     /**
      * Play current song
      */
     public void Play()
     {
-        
+        String bip = "bip.mp3";
+        Media hit = new Media(new File(bip).toURI().toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(hit);
+        mediaPlayer.play();   
         
         
     }
