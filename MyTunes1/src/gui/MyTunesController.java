@@ -14,7 +14,7 @@ import javafx.scene.control.Label;
 
 /**
  *
- * @author kaspe
+ * @author Kasper, Christian, Nicklas og Jonas
  */
 public class MyTunesController implements Initializable
 {
