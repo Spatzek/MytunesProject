@@ -1,14 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.gluonhq.charm.glisten.control.ProgressBar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytunes1.MyTunesController">
+<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="936.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="mytunes1.MyTunesController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Slider layoutX="6.0" layoutY="6.0" orientation="VERTICAL">
+         <effect>
+            <InnerShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect>
+      </Slider>
+      <ButtonBar layoutX="38.0" layoutY="109.0" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <Button fx:id="Last" defaultButton="true" mnemonicParsing="false" text="Last Song" textFill="#9f0909">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="Stop" defaultButton="true" mnemonicParsing="false" text="Stop" textFill="#9f0909">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="Pause" defaultButton="true" mnemonicParsing="false" text="Pause" textFill="#9f0909">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="Play" defaultButton="true" mnemonicParsing="false" text="Play" textFill="#9f0909">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="Next" defaultButton="true" mnemonicParsing="false" text="Next Song" textFill="#9f0909">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+         </buttons>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ButtonBar>
+      <ProgressBar layoutX="13.0" layoutY="156.0" prefHeight="10.0" prefWidth="464.0" progress="0.0">
+         <effect>
+            <InnerShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect>
+      </ProgressBar>
+      <TextArea layoutX="28.0" layoutY="14.0" prefHeight="96.0" prefWidth="450.0">
+         <effect>
+            <InnerShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect>
+      </TextArea>
+      <ListView fx:id="Playlist" layoutX="13.0" layoutY="205.0" prefHeight="358.0" prefWidth="202.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ListView>
+      <ListView fx:id="Favorites" layoutX="228.0" layoutY="205.0" prefHeight="358.0" prefWidth="202.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ListView>
+      <ListView fx:id="Search" layoutX="444.0" layoutY="205.0" prefHeight="358.0" prefWidth="202.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ListView>
+      <Text layoutX="94.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Playlist" wrappingWidth="40.509765625" />
+      <Text layoutX="302.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Favourites" />
+      <Text layoutX="527.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" />
     </children>
 </AnchorPane>
