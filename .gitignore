@@ -21,8 +21,13 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
 /MyTunes1/build/
 /MyTunes1/dist/
 MyTunes1/nbproject/project.properties
 MyTunes1/src/gui/MyTunes.fxml
 MyTunes1/src/gui/MyTunesController.java
+=======
+/MyTunes1/dist/
+/MyTunes1/build/
+>>>>>>> 0badfaf3c13de66c03aa6c3d9016148de3d34b65
