@@ -5,11 +5,8 @@
  */
 package be;
 import javazoom.jl.player.Player;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.AudioDevice;
 
@@ -34,6 +31,7 @@ public class MusicPlayer
     // status variable what player thread is doing/supposed to do
     private int playerStatus = NOTSTARTED;
 
+    
     public MusicPlayer(final InputStream inputStream) throws JavaLayerException 
     {
         this.player = new Player(inputStream);
@@ -181,41 +179,17 @@ public class MusicPlayer
             player.play();
 
             // after 5 secs, pause
-            Thread.sleep(5000);
-            player.pause();     
+            //Thread.sleep(5000);
+            //player.pause();     
 
             // after 5 secs, resume
-            Thread.sleep(5000);
-            player.resume();
+            //Thread.sleep(5000);
+            //player.resume();
         } 
         catch (final Exception e) 
         {
             throw new RuntimeException(e);
     }
-    
-    /*
-    *Pauses current song
-    */
-    public void Pause()
-    {
-        
-    }
-    
-    
-    /**
-     * Skip current song
-     */       
-    public void NextSong()
-    {
-        
-    }        
-    /**
-     * Plays previous song
-     */
-    public void PreviousSong()
-    {
-        
-    }
 
-
+    }
 }
