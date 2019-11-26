@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package gui;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -18,7 +17,6 @@ import javafx.scene.control.Label;
  */
 public class MyTunesController implements Initializable
 {
-    
     @FXML
     private Label label;
     
@@ -34,5 +32,6 @@ public class MyTunesController implements Initializable
     {
         // TODO
     }    
+    
     
 }
