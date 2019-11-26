@@ -190,30 +190,5 @@ public class MusicPlayer
         {
             throw new RuntimeException(e);
     }
-    
-    /*
-    *Pauses current song
-    */
-    //public void Pause()
-    //{
-        
-    //}
-    
-    
-    /**
-     * Skip current song
-     */       
-    //public void NextSong()
-    //{
-        
-    //}        
-    /**
-     * Plays previous song
-     */
-    //public void PreviousSong()
-    //{
-        
-    //}
-
 
 }
