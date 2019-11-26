@@ -172,8 +172,9 @@ public class MusicPlayer
 
     // demo how to use
     public static void main(String[] argv) {
-        try {
-            FileInputStream input = new FileInputStream("myfile.mp3"); 
+        try
+        {
+            FileInputStream input = new FileInputStream("Metallica - One [Official Music Video].mp3"); 
             Player player = new Player(input);
 
             // start playing
@@ -186,7 +187,9 @@ public class MusicPlayer
             // after 5 secs, resume
             Thread.sleep(5000);
             player.resume();
-        } catch (final Exception e) {
+        } 
+        catch (final Exception e) 
+        {
             throw new RuntimeException(e);
     }
     
