@@ -196,26 +196,26 @@ public class MusicPlayer
     /*
     *Pauses current song
     */
-    public void Pause()
-    {
+    //public void Pause()
+    //{
         
-    }
+    //}
     
     
     /**
      * Skip current song
      */       
-    public void NextSong()
-    {
+    //public void NextSong()
+    //{
         
-    }        
+    //}        
     /**
      * Plays previous song
      */
-    public void PreviousSong()
-    {
+    //public void PreviousSong()
+    //{
         
-    }
+    //}
 
 
 }
