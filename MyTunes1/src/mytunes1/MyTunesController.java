@@ -14,6 +14,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.MouseEvent;
 
 /**
  * FXML Controller class
@@ -31,7 +32,7 @@ public class MyTunesController implements Initializable {
     @FXML
     private Button Pause;
     @FXML
-    private Button Play;
+    private Button btnPlay;
     @FXML
     private Button Next;
     @FXML
@@ -47,12 +48,15 @@ public class MyTunesController implements Initializable {
      * Initializes the controller class.
      */
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+    public void initialize(URL url, ResourceBundle rb) 
+    {
+        
     }    
 
     @FXML
-    private void Click(ActionEvent event) {
+    private void playSong(ActionEvent event) 
+    {
+        
     }
-    
+
 }
