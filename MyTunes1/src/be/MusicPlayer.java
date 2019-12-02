@@ -172,7 +172,7 @@ public class MusicPlayer
     public static void main(String[] argv) {
         try
         {
-            FileInputStream input = new FileInputStream("Metallica - One [Official Music Video].mp3"); 
+            FileInputStream input = new FileInputStream("sang.mp3"); 
             Player player = new Player(input);
 
             // start playing
