@@ -23,24 +23,25 @@ public class MusicPlayer
     private final static int FINISHED = 3;
 
     // the player actually doing all the work
-    private final Player player;
+    public Player player;
 
     // locking object used to communicate with player thread
-    private final Object playerLock = new Object();
+    public Object playerLock = new Object();
 
     // status variable what player thread is doing/supposed to do
-    private int playerStatus = NOTSTARTED;
+    public int playerStatus = NOTSTARTED;
 
     
-    public MusicPlayer(final InputStream inputStream) throws JavaLayerException 
+    public MusicPlayer(InputStream inputStream) throws JavaLayerException 
     {
         this.player = new Player(inputStream);
     }
 
-    public MusicPlayer(final InputStream inputStream, final AudioDevice audioDevice) throws JavaLayerException 
+    public MusicPlayer(InputStream inputStream, AudioDevice audioDevice) throws JavaLayerException 
     {
         this.player = new Player(inputStream, audioDevice);
     }
+
     
     /**
      * Play current song
@@ -52,14 +53,14 @@ public class MusicPlayer
             switch (playerStatus) 
             {
                 case NOTSTARTED:
-                    final Runnable r = new Runnable() 
+                    Runnable r = new Runnable() 
                     {
                         public void run() 
                         {
                             playInternal();
                         }
                     };
-                    final Thread t = new Thread(r);
+                    Thread t = new Thread(r);
                     t.setDaemon(true);
                     t.setPriority(Thread.MAX_PRIORITY);
                     playerStatus = PLAYING;
