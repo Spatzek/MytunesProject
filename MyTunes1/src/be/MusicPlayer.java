@@ -170,14 +170,14 @@ public class MusicPlayer
     }
 
     // demo how to use
-    public static void main(String[] argv) {
-        try
-        {
-            FileInputStream input = new FileInputStream("sang.mp3"); 
-            Player player = new Player(input);
+    //public static void main(String[] argv) {
+        //try
+        //{
+            //FileInputStream input = new FileInputStream("sang.mp3"); 
+            //Player player = new Player(input);
 
             // start playing
-            player.play();
+            //player.play();
 
             // after 5 secs, pause
             //Thread.sleep(5000);
@@ -186,11 +186,11 @@ public class MusicPlayer
             // after 5 secs, resume
             //Thread.sleep(5000);
             //player.resume();
-        } 
-        catch (final Exception e) 
-        {
-            throw new RuntimeException(e);
-    }
+        //} 
+        //catch (final Exception e) 
+        //{
+            //throw new RuntimeException(e);
+    //}
 
-    }
+    //}
 }
