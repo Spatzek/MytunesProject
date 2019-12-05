@@ -17,10 +17,10 @@ import javazoom.jl.player.AudioDevice;
  */
 public class MusicPlayer
 {
-    private final static int NOTSTARTED = 0;
-    private final static int PLAYING = 1;
-    private final static int PAUSED = 2;
-    private final static int FINISHED = 3;
+    public final static int NOTSTARTED = 0;
+    public final static int PLAYING = 1;
+    public final static int PAUSED = 2;
+    public final static int FINISHED = 3;
 
     // the player actually doing all the work
     public Player player;
