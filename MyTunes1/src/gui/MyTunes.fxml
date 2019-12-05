@@ -26,7 +26,15 @@
       </Slider>
       <ButtonBar layoutX="38.0" layoutY="109.0" prefHeight="40.0" prefWidth="471.0">
          <buttons>
-            <Button fx:id="Last" defaultButton="true" mnemonicParsing="false" onAction="#Click" text="Last Song" textFill="#9f0909">
+<!--            <Button fx:id="btnPrev" defaultButton="true" mnemonicParsing="false" onAction="#prevSong" text="Last Song" textFill="#9f0909">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>-->
+            <Button fx:id="btnStop" defaultButton="true" mnemonicParsing="false" onAction="#stopSong" text="Stop" textFill="#9f0909">
                <font>
                   <Font size="10.0" />
                </font>
@@ -34,15 +42,7 @@
                   <InnerShadow />
                </effect>
             </Button>
-            <Button fx:id="Stop" defaultButton="true" mnemonicParsing="false" onAction="#Click" text="Stop" textFill="#9f0909">
-               <font>
-                  <Font size="10.0" />
-               </font>
-               <effect>
-                  <InnerShadow />
-               </effect>
-            </Button>
-            <Button fx:id="Pause" defaultButton="true" mnemonicParsing="false" onAction="#Click" text="Pause" textFill="#9f0909">
+            <Button fx:id="btnPause" defaultButton="true" mnemonicParsing="false" onAction="#pauseSong" text="Pause" textFill="#9f0909">
                <font>
                   <Font size="10.0" />
                </font>
@@ -58,29 +58,20 @@
                   <InnerShadow />
                </effect>
             </Button>
-            <Button fx:id="Next" defaultButton="true" mnemonicParsing="false" onAction="#Click" text="Next Song" textFill="#9f0909">
+<!--            <Button fx:id="btnNext" defaultButton="true" mnemonicParsing="false" onAction="#skipSong" text="Next Song" textFill="#9f0909">
                <font>
                   <Font size="10.0" />
                </font>
                <effect>
                   <InnerShadow />
                </effect>
-            </Button>
+            </Button>-->
             <ButtonBar minWidth="0.0" prefHeight="40.0" prefWidth="200.0" />
          </buttons>
          <effect>
             <InnerShadow />
          </effect>
       </ButtonBar>
-      <ProgressBar layoutX="13.0" layoutY="156.0" prefHeight="10.0" prefWidth="464.0" progress="0.0" AnchorPane.bottomAnchor="407.6" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="459.0" AnchorPane.topAnchor="155.99999999999997">
-         <effect>
-            <InnerShadow>
-               <input>
-                  <DropShadow />
-               </input>
-            </InnerShadow>
-         </effect>
-      </ProgressBar>
       <TextArea fx:id="SongName" layoutX="28.0" layoutY="14.0" prefHeight="96.0" prefWidth="450.0">
          <effect>
             <InnerShadow>
