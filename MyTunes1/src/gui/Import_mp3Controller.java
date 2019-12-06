@@ -35,25 +35,31 @@ public class Import_mp3Controller implements Initializable
 
 
     //cancel application
-    private void CancelApplication(java.awt.event.ActionEvent evt) 
-    {
-        System.exit(0);
-    } 
+//    private void CancelApplication(java.awt.event.ActionEvent evt) 
+//    {
+//        System.exit(0);
+//    } 
+//
+//
+//    //save and open file
+//    private void OpenAndFindFile(java.awt.event.ActionEvent evt) 
+//    {
+//        JFileChooser fileChooser = new JFileChooser();
+//        fileChooser.setDialogTitle("Specify a file to save");
+// 
+//        int OpenAndFindFile = fileChooser.showSaveDialog(parentFrame);
+// 
+//        if (SaveFile == JFileChooser.APPROVE_OPTION) 
+//        {
+//        File fileToSave = fileChooser.getSelectedFile();
+//        System.out.println("Save as file: " + fileToSave.getAbsolutePath());
+//        }
+//    }
 
-
-    //save and open file
-    private void OpenAndFindFile(java.awt.event.ActionEvent evt) 
+    @Override
+    public void initialize(URL location, ResourceBundle resources)
     {
-        JFileChooser fileChooser = new JFileChooser();
-        fileChooser.setDialogTitle("Specify a file to save");
- 
-        int OpenAndFindFile = fileChooser.showSaveDialog(parentFrame);
- 
-        if (SaveFile == JFileChooser.APPROVE_OPTION) 
-        {
-        File fileToSave = fileChooser.getSelectedFile();
-        System.out.println("Save as file: " + fileToSave.getAbsolutePath());
-        }
+        
     }
 }
 
