@@ -164,33 +164,8 @@ public class MusicPlayer
         try {
             player.close();
         } catch (final Exception e) 
-        {
-            // ignore, we are terminating anyway
-        }
-    }
-
-    // demo how to use
-    //public static void main(String[] argv) {
-        //try
-        //{
-            //FileInputStream input = new FileInputStream("sang.mp3"); 
-            //Player player = new Player(input);
-
-            // start playing
-            //player.play();
-
-            // after 5 secs, pause
-            //Thread.sleep(5000);
-            //player.pause();     
-
-            // after 5 secs, resume
-            //Thread.sleep(5000);
-            //player.resume();
-        //} 
-        //catch (final Exception e) 
-        //{
-            //throw new RuntimeException(e);
-    //}
-
-    //}
+        
+    
+}
+}
 }
