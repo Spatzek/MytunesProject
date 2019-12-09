@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author kaspe
+ * @author kasper, Nicklas, Christian Og Jonas
  */
 public class MyTunes1 extends Application
 {

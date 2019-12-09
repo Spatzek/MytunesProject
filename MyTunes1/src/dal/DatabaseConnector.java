@@ -13,7 +13,7 @@ import java.util.Properties;
 
 /**
  *
- * @author kaspe
+ * @author kasper, Nicklas, Christian Og Jonas
  */
 public class DatabaseConnector
 {

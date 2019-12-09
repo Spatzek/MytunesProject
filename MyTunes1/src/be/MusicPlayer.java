@@ -13,7 +13,7 @@ import javazoom.jl.player.AudioDevice;
 
 /**
  *
- * @author kaspe
+ * @author kasper, Nicklas, Christian Og Jonas
  */
 public class MusicPlayer
 {
