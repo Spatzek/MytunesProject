@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package be;
+package MyTunes.be;
 import javazoom.jl.player.Player;
 import java.io.FileInputStream;
 import java.io.InputStream;
