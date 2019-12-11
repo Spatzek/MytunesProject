@@ -26,6 +26,17 @@
       </Slider>
       <ButtonBar layoutX="38.0" layoutY="109.0" prefHeight="40.0" prefWidth="471.0">
          <buttons>
+             <ButtonBar minWidth="0.0" prefHeight="40.0" prefWidth="200.0">
+               <buttons>
+                  <Button fx:id="addSong" defaultButton="true" mnemonicParsing="false" onAction="#addSong" onMouseClicked="#addSong" text="addSong" textFill="#9f0909">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Button>
+               </buttons></ButtonBar>
 <!--            <Button fx:id="btnPrev" defaultButton="true" mnemonicParsing="false" onAction="#prevSong" text="Last Song" textFill="#9f0909">
                <font>
                   <Font size="10.0" />
