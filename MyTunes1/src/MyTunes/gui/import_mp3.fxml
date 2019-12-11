@@ -54,10 +54,10 @@
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
             <Label layoutX="54.0" layoutY="41.0" text="File Location" />
-            <TextField layoutX="54.0" layoutY="74.0" prefHeight="26.0" prefWidth="365.0" />
-            <Button layoutX="54.0" layoutY="115.0" mnemonicParsing="false" text="Cancel" />
-            <Button layoutX="155.0" layoutY="115.0" mnemonicParsing="false" text="Open" />
-            <Button layoutX="364.0" layoutY="115.0" mnemonicParsing="false" text="Save" />
+            <TextField fx:id="TextField" layoutX="54.0" layoutY="74.0" prefHeight="26.0" prefWidth="365.0" />
+            <Button fx:id="CancelApplication" layoutX="54.0" layoutY="115.0" mnemonicParsing="false" text="Cancel" />
+            <Button fx:id="OpenAndFindFile" layoutX="155.0" layoutY="115.0" mnemonicParsing="false" text="Open" />
+            <Button fx:id="SaveFile" layoutX="364.0" layoutY="115.0" mnemonicParsing="false" text="Save" />
       </children>
     </AnchorPane>
   </children>

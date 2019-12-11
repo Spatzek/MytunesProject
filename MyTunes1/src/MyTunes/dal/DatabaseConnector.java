@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dal;
+package MyTunes.dal;
 import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 import java.io.FileReader;
@@ -13,7 +13,7 @@ import java.util.Properties;
 
 /**
  *
- * @author kaspe
+ * @author kasper, Nicklas, Christian Og Jonas
  */
 public class DatabaseConnector
 {

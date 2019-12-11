@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui;
+package MyTunes.gui;
 
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -19,7 +19,7 @@ import javax.swing.JFileChooser;
 /**
  * FXML Controller class
  *
- * @author chri9
+ * @author kasper, Nicklas, Christian Og Jonas
  */
 public class Import_mp3Controller implements Initializable 
 {
